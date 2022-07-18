@@ -39,6 +39,14 @@ nav {
     justify-content: space-between;
 }
 
+.right-nav-col ul li a:hover {
+    color: #059dc3;
+}
+
+.active {
+    color: #059dc3;
+}
+
 ul,
 li,
 a {
@@ -113,9 +121,7 @@ a {
     justify-content: center;
     align-items: center;
     padding: 0px;
-
     width: 920px;
-    height: 212px;
 }
 
 .bigText h1 {
@@ -127,7 +133,27 @@ a {
 .bigText p {
     font-weight: 700;
     font-size: 28px;
-    line-height: 36px;
-
     text-align: center;
+}
+
+
+.signBtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 24px;
+    gap: 16px;
+
+    width: 152px;
+    height: 42px;
+
+    background: #059dc3;
+    border-radius: 8px;
+}
+
+.signBtn p {
+    font-size: 18px;
+    font-style: bold;
+    font-weight: 700;
 }
