@@ -1,61 +1,133 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@200;300;400;500;600;700;800;900&family=Lexend:wght@400;500;600;700&display=swap');
 
-* {
-    padding: 0;
+
+body {
     margin: 0;
+    padding: 0;
     font-family: 'Lexend', sans-serif;
-    cursor: pointer;
     background-color: black;
-    color: white;
+}
+
+/* navigation bar style */
+header {
+    padding: 32px 164px;
 }
 
 nav {
+    overflow: hidden;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    padding: 0px;
-    position: absolute;
-    width: 1140px;
-    height: 76px;
-    left: 150px;
-    top: 40px;
 }
 
 .left-nav-col {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 16px;
-    height: 76px;
+    width: 70%;
+    color: white;
 }
 
+.burgerBtn {
+    display: none;
+}
+
+.right-nav-col {
+    width: 30%;
+}
 
 .right-nav-col ul {
+    list-style: none;
+    padding: 0;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 0px;
-    gap: 16px;
-    width: 505px;
-    height: 76px;
+    justify-content: space-between;
 }
 
 ul,
 li,
 a {
-    list-style: none;
     text-decoration: none;
+    color: white;
 }
 
-.right-nav-col li {
+@media screen and (max-width: 600px) {
+    nav {
+        overflow: hidden;
+        display: block;
+        align-items: center;
+    }
+
+    header {
+        padding: 16px 32px;
+    }
+
+    .left-nav-col,
+    .right-nav-col {
+        width: 100%;
+    }
+
+    .right-nav-col ul {
+        display: none;
+    }
+
+    /* ketika burgerBtn di tekan ditambahkan kelas baru */
+    .expand {
+        display: block;
+    }
+
+    .left-nav-col {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .burgerBtn {
+        display: block;
+    }
+
+    .right-nav-col ul li {
+        margin-top: 30px;
+        height: 30px;
+    }
+}
+
+
+/* hero style */
+.hero {
+    background-image: url(../assets/img/heroSection.svg);
+    background-size: cover;
+    height: 582px;
+    color: white;
+
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 16px;
-    width: 92px;
-    height: 51px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 40px;
+
+    height: 582px;
+    left: 0px;
+    top: 96px;
+}
+
+.bigText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+
+    width: 920px;
+    height: 212px;
+}
+
+.bigText h1 {
+    font-size: 56px;
+    width: 820px;
+    text-align: center;
+}
+
+.bigText p {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+
+    text-align: center;
 }
