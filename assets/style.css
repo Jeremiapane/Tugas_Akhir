@@ -157,3 +157,103 @@ a {
     font-style: bold;
     font-weight: 700;
 }
+
+
+
+/* fasilitas style */
+
+.fasilitas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 80px;
+
+    position: absolute;
+    width: 1440px;
+    height: 954px;
+    left: 0px;
+    top: 678px;
+}
+
+
+.fasilitas h2 {
+    width: 889px;
+    height: 48px;
+
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    /* identical to box height, or 150% */
+
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color: #F1F1F8;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.row1 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+
+    width: 1112px;
+    height: 249px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.card {
+    width: 344px;
+    height: 249px;
+    display: flex;
+}
+
+.card .overlay {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.02em;
+    width: 344px;
+    height: 100px;
+    background-color: red;
+}
+
+.card p {
+    position: absolute;
+    width: 115px;
+    height: 48px;
+
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    /* identical to box height, or 150% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color: #FFFFFF;
+    z-index: 1;
+}
